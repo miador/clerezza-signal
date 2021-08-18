@@ -16,24 +16,6 @@ public class FileOperations {
     private static final Logger logger = LoggerFactory.getLogger( FileOperations.class );
 
     /**
-     *
-     * @param filename, with the given filename a new file will be created if file doesn't exist.
-     *                  Will do nothing if file already exists.
-     */
-    public static void createFileIfNotExist( String filename ) {
-        try {
-            File file = new File( filename );
-            if ( file.createNewFile() ) {
-                logger.info( "File created at: " + "\"" + filename + "\"" );
-            } else {
-                logger.info( "Existing file at the directory: " + "\"" + filename + "\"" + " will be overwritten by the serializer" );
-            }
-        } catch ( Exception e ) {
-            System.out.println( e.getLocalizedMessage() );
-        }
-    }
-
-    /**
      * @param graph, takes mergedGraph and serialize it into file.
      */
     public static void saveGraph( Graph graph, String filename ) {

@@ -5,9 +5,9 @@ import org.apache.clerezza.*;
 import org.apache.clerezza.implementation.TripleImpl;
 import org.apache.clerezza.implementation.in_memory.SimpleGraph;
 import org.apache.clerezza.implementation.literal.PlainLiteralImpl;
+import org.apache.clerezza.ontologies.FOAF;
+import org.apache.clerezza.ontologies.RDF;
 import org.apache.clerezza.signal.file.FileOperations;
-import org.apache.clerezza.signal.model.FOAF;
-import org.apache.clerezza.signal.model.RDF;
 import org.apache.clerezza.signal.model.SIGNAL;
 
 import java.io.IOException;
@@ -19,14 +19,13 @@ import static org.apache.clerezza.signal.file.FileOperations.retrieveResourceFro
 public class SignalGraph {
 
     /**
-     *
-     * @param json, an {@link ObjectNode} with the Person, Conversation and Message information.
+     * @param json,     an {@link ObjectNode} with the Person, Conversation and Message information.
      * @param filename, requested file
      * @throws IOException, if there's no file named with filename.
-     *
-     * Check if there’s data ready to read. If not, save incoming graph.
-     * 	If there’s data to read, that means there are existing messages.
-     * Iterate over the nodes to check whether conversation is existing or not. If the conversation exists, then overwrite the graph.
+     *                      <p>
+     *                      Check if there’s data ready to read. If not, save incoming graph.
+     *                      If there’s data to read, that means there are existing messages.
+     *                      Iterate over the nodes to check whether conversation is existing or not. If the conversation exists, then overwrite the graph.
      */
     public static void buildGraph( ObjectNode json, String filename ) throws IOException {
         InputStream inputStream = retrieveResourceFromFile( filename );
