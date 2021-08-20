@@ -62,23 +62,4 @@ public class FileOperations {
         return inputStream;
     }
 
-    /**
-     *
-     * @param filename, with the given filename, will build a String and print it as graph.
-     * @return {@link String} as representation of the graph.
-     */
-    public static String printGraph( String filename ) {
-
-        StringBuilder sb = new StringBuilder();
-        try ( BufferedReader br = new BufferedReader( new FileReader( filename ) ) ) {
-            String line;
-            while ( ( line = br.readLine() ) != null ) {
-                sb.append( line ).append( "\n" );
-            }
-        } catch ( IOException e ) {
-            e.printStackTrace();
-        }
-        return sb.toString();
-    }
-
 }
