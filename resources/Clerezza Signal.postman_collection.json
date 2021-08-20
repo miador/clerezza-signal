@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "4db3a595-2813-4082-aa3f-c6eb5d13b63c",
+		"name": "Clerezza Signal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET Graph",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
