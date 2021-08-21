@@ -7,10 +7,34 @@
 	"item": [
 		{
 			"name": "POST Messages",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
 			"request": {
-				"method": "GET",
-				"header": [],
-				"url": null
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Person\": {\r\n    \"username\": \"testuser\"\r\n  },\r\n  \"Message\": {\r\n    \"text\": \"Test Message\",\r\n    \"timestamp\": \"1629474568\"\r\n  },\r\n  \"Conversation\": {\r\n    \"conversationName\": \"TestConversation\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/signal/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signal",
+						"messages"
+					]
+				}
 			},
 			"response": []
 		},
@@ -19,7 +43,18 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:8080/signal/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"signal",
+						"messages"
+					]
+				}
 			},
 			"response": []
 		}
