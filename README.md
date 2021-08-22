@@ -13,4 +13,6 @@ Signal Spring Boot Web service with Java 8: https://github.com/miador/clerezza-g
 
 The detailed report can be found under [clerezza-signal/resources/GSoC_report.pdf](https://github.com/miador/clerezza-signal/blob/main/resources/GSoC_report.pdf)
 
+The report is also available in Google Docs: https://docs.google.com/document/d/1edxG-apKv601a3643PFn14dQIr9o-txM/edit?usp=sharing&ouid=115854599985187680335&rtpof=true&sd=true
+
 POSTMAN collection for the web services can be found under [clerezza-signal/resources/Clerezza Signal.postman_collection.json](https://github.com/miador/clerezza-signal/blob/main/resources/Clerezza%20Signal.postman_collection.json)
